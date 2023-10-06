@@ -7,6 +7,9 @@
 main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin: 0 auto;
 }
 

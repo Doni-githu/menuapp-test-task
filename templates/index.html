@@ -11,7 +11,10 @@
   <body>
     <main>
       {% draw_menu 'some' as some_html %}
+
       {{ some_html|safe }}
+      {% draw_menu 'another' as another_html %}
+      {{ another_html|safe }}
     </main>
   </body>
 </html>

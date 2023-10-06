@@ -34,10 +34,10 @@ def draw_menu(context, menu_name):
 
         return f'<li class="{active}"><a href="{url}">{menu_item.name}</a>{submenu_html}</li>'
 
-    menu_html = f'<h1>{menu.name}</h1> <ul class="menu">'
-    
+    menu_html = f'<div><h1>{menu.name}</h1> <ul class="menu">'
+
     for item in menu.children.all():
         menu_html += render_menu(item)
-    menu_html += "</ul>"
+    menu_html += "</ul> </div>"
 
     return menu_html
